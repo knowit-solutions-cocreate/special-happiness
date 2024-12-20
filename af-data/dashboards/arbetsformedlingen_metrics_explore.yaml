@@ -1,0 +1,10 @@
+# Explore YAML
+# Reference documentation: https://docs.rilldata.com/reference/project-files/explore-dashboards
+
+type: explore
+
+title: "Arbetsformedlingen Job Postings dashboard"
+metrics_view: arbetsformedlingen_metrics
+
+dimensions: '*'
+measures: '*'

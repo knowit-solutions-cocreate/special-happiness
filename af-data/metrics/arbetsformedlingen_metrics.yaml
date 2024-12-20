@@ -1,0 +1,74 @@
+# Metrics view YAML
+# Reference documentation: https://docs.rilldata.com/reference/project-files/dashboards
+# This file was generated using AI.
+
+version: 1
+type: metrics_view
+
+display_name: Arbetsformedlingen Job Postings
+model: arbetsformedlingen_model
+
+dimensions:
+  - name: id
+    display_name: Id
+    column: id
+  - name: detected_language
+    display_name: Detected Language
+    column: detected_language
+  - name: application_deadline
+    display_name: Application Deadline
+    column: application_deadline
+  - name: ssyk_lvl4
+    display_name: Ssyk Lvl4
+    column: ssyk_lvl4
+  - name: hashsum
+    display_name: Hashsum
+    column: hashsum
+  - name: isValid
+    display_name: Isvalid
+    column: isValid
+  - name: brief_description
+    display_name: Brief Description
+    column: brief_description
+  - name: date_to_display_as_publish_date
+    display_name: Date To Display As Publish Date
+    column: date_to_display_as_publish_date
+
+measures:
+  - name: total_job_postings_measure
+    display_name: Total Job Postings
+    expression: COUNT(id)
+    description: The total number of job postings in the arbetsformedlingen table.
+    format_preset: humanize
+  - name: valid_job_postings_count_measure
+    display_name: Valid Job Postings Count
+    expression: COUNT(CASE WHEN isValid THEN 1 END)
+    description: The count of job postings that are marked as valid.
+    format_preset: humanize
+  - name: average_languages_detected_measure
+    display_name: Average Languages Detected
+    expression: AVG(LENGTH(detected_language))
+    description: The average length of detected language codes in job postings.
+    format_preset: humanize
+  - name: max_publish_date_length_measure
+    display_name: Max Publish Date Length
+    expression: MAX(LENGTH(date_to_display_as_publish_date))
+    description: The maximum length of the publish date string in job postings.
+    format_preset: humanize
+  - name: min_application_deadline_length_measure
+    display_name: Min Application Deadline Length
+    expression: MIN(LENGTH(application_deadline))
+    description: The minimum length of the application deadline string in job postings.
+    format_preset: humanize
+  - name: total_unique_ssyk_lvl4_measure
+    display_name: Total Unique SSYK Level 4
+    expression: COUNT(DISTINCT ssyk_lvl4)
+    description: The total number of unique SSYK level 4 codes in job postings.
+    format_preset: humanize
+  - name: min_brief_description_length_measure
+    display_name: Min Brief Description Length
+    expression: MIN(LENGTH(brief_description))
+    description: The minimum length of the brief description in job postings.
+    format_preset: humanize
+timeseries: firstSeen
+smallest_time_grain: day
