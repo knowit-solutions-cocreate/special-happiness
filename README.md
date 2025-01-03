@@ -45,14 +45,14 @@ This assessment involves exploring and analyzing employment data using Rill Data
 
 ## Your Task
 
-Set up and familiarize yourself with the provided Rill Data project
-Explore the dataset and prepare for a collaborative discussion about your findings
-During our session, you'll lead the exploration of the data while we discuss various business questions and scenarios
+- Set up and familiarize yourself with the provided Rill Data project
+- Explore the dataset and prepare for a collaborative discussion about your findings
+- During our session, you'll lead the exploration of the data while we discuss various business questions and scenarios
 
 ## Preparation
 
-Feel free to modify the data structure before our session if you believe it would enhance the analysis
-The current data structure is AI-generated and can be optimized based on your experience
-Consider preparing some initial observations to discuss during our session
+- Feel free to modify the data structure before our session if you believe it would enhance the analysis
+- The current data structure is AI-generated and can be optimized based on your experience
+- Consider preparing some initial observations to discuss during our session
 
 During our time together, we'll explore different aspects of the data, discussing potential implications and use cases as we go along. Be prepared to walk us through your thought process and approach to data exploration.
