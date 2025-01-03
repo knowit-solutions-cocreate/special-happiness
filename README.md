@@ -1,40 +1,58 @@
 # Introduction
 
-Hi and welcome to our test
+## Welcome to our Technical Interview Assessment
 
-This is real data from arbetsförmedlingen. We want to use it to see if we can find any insights related to for example
-Business Intelligence, powerbi or similar topic.
+In this test, you'll be working with real employment data from Arbetsförmedlingen (the Swedish Public Employment Service). We've provided a repository containing a Rill Data project with a DuckDB database for you to explore and analyze.
+Your task is to leverage your Business Intelligence skills to uncover meaningful insights from this dataset. You'll have the opportunity to demonstrate your proficiency with:
 
-## Arbetsförmedlings ads
+Data exploration and analysis
+PowerBI visualization and reporting
+Business insight identification and interpretation
 
-You should have gotten a link to a duckdb file, contact us if not so.
-This contains a limited subset of data that is loaded for you.
+The repository is set up with an example project, and you're encouraged to use your expertise to showcase how you would approach analyzing and visualizing this information in a business context.
+Take your time to explore the data and create visualizations that you believe would provide valuable insights for stakeholders.
 
-Take this duckdb file and place it as af-data/af.db
+## Dataset Setup
 
-## Install rilldata
+### Database Installation
+- You should have received a link to a DuckDB file containing a curated subset of Arbetsförmedlingen employment data
+- If you haven't received the file, please contact us immediately
+- Place the received file at `af-data/af.db` in your project directory
 
-The tool we will use to visualize is rill and is available in this project
+### Setting Up Rill Data
+Rill is our visualization tool of choice for this assessment. You can install it through either:
 
-install it by either going to https://www.rilldata.com/ and follow install instructions
-or just running
-```curl https://rill.sh | sh```
+1. Visit [www.rilldata.com](https://www.rilldata.com/) and follow the installation guide
+2. Or use the terminal command:
+```
+curl https://rill.sh | sh
+```
 
-## Starting the project
+### Launch Instructions
+Once Rill is installed, start the project from the root directory using:
+```
+rill start af-data
+```
 
-when you have rill installed then use it to start the project (if installed globally)
+### Troubleshooting Note
+If you experience any issues accessing the visualization interface, please try disabling your ad blocker, as recent versions of Rill may have compatibility issues with certain ad blockers."
 
-`rill start af-data`
+# Technical Assessment
 
-from the root of this project.
+## Overview
 
-## Gotchas
+This assessment involves exploring and analyzing employment data using Rill Data. During our session together, you'll guide us through your analysis process while we discuss potential insights and their business implications.
 
-Rill data has some issues in a recent version with ad blockers, try disabling them if it doesnt work for you
+## Your Task
 
-# The test
+Set up and familiarize yourself with the provided Rill Data project
+Explore the dataset and prepare for a collaborative discussion about your findings
+During our session, you'll lead the exploration of the data while we discuss various business questions and scenarios
 
-Use rill data to look around, your test will be together with us try to answer questions
-and explore the data to see if we can find any insights. Where we will be using this data and you be in the drivers seat.
+## Preparation
 
-If you want to change any of the data structure prior to the interview feel free to do so, this is just the AI generated version of this specific data and can be much improved upon.
+Feel free to modify the data structure before our session if you believe it would enhance the analysis
+The current data structure is AI-generated and can be optimized based on your experience
+Consider preparing some initial observations to discuss during our session
+
+During our time together, we'll explore different aspects of the data, discussing potential implications and use cases as we go along. Be prepared to walk us through your thought process and approach to data exploration.
